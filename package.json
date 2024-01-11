@@ -3,8 +3,8 @@
   "type": "commonjs",
   "author": "jjasoncool <nameyearbirthday@gmail.com>",
   "license": "MIT",
-  "private":"true",
-  "workspaces":[
+  "workspaces": [
     "apiservers/*"
-  ]
+  ],
+  "packageManager": "yarn@4.0.2"
 }
