@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  node:
+    build:
+        context: "./node/"
+        args:
+          NODE_VERSION: ${NODE_VERSION}
+    environment:
+      - TZ=Asia/Taipei
+    expose:
+      - "3000"
+    volumes:
+      - src_code:/srv/src/:ro
+      - ./ecosystem.config.js:/srv/ecosystem.config.js:ro
+      - ./logs:/srv/logs
+      - ./node_modules:/srv/node_modules
+      - ./package.json:/srv/package.json
+      - ./.env:/srv/.env
+      - ./yarn.lock:/srv/yarn.lock
+    container_name: "${NODE_NAME}"
+    restart: always
+
+volumes:
+  src_code:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: './src/'
+    external: false
+
+networks:
+  default:
+    name: service
+    external: true

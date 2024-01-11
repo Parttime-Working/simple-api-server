@@ -1,0 +1,10 @@
+{
+  "name": "apiserver",
+  "type": "commonjs",
+  "author": "jjasoncool <nameyearbirthday@gmail.com>",
+  "license": "MIT",
+  "private":"true",
+  "workspaces":[
+    "apiservers/*"
+  ]
+}
