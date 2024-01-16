@@ -1,9 +1,6 @@
 const port = 3000;
 const express = require('express');
 const routers = require('../routers');
-require('dotenv').config();
-
-console.log('process.env.PROXY_HOST', process.env.PROXY_HOST);
 
 const app = express();
 

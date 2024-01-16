@@ -1,9 +1,8 @@
 const axios = require('axios');
-
-console.log('process.env.PROXY_HOST', process.env.PROXY_HOST);
+const config = require('../../config/services.config');
 
 const proxyClient = axios.create({
-  baseURL: process.env.PROXY_HOST,
+  baseURL: config.apiProxy.host,
 });
 
 module.exports = proxyClient;

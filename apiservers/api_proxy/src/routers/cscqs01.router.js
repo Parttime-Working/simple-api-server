@@ -7,12 +7,6 @@ const iconv = require('iconv-lite');
 
 // define the home page route
 router.get('*', async (req, res) => {
-  console.log('ok');
-  res.send('cscqs01-test');
-
-  // testing
-  return;
-
   const cscqs01Client = axios.create({
     baseURL: process.env.CSC_URL,
   });
