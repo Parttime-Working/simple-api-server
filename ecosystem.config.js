@@ -3,8 +3,8 @@ module.exports = {
   apps: [
     {
       name: 'api_service',
-      script: './src/app.js',
-      cwd: '/srv',
+      script: './apiservices/gateway/src/bin/main.js',
+      cwd: './apiservices/gateway',
       exec_mode: 'cluster',
       instances: 1,
       // max_memory_restart: '1500M',
