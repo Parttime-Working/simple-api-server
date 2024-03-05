@@ -1,5 +1,5 @@
 {
-  "name": "@apiserver/gateway",
+  "name": "@apiservers/gateway",
   "version": "1.0.0",
   "author": "jjasoncool <nameyearbirthday@gmail.com>",
   "main": "src/bin/main.js",

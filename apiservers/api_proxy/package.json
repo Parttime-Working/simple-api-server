@@ -1,5 +1,5 @@
 {
-  "name": "@apiserver/api_proxy",
+  "name": "@apiservers/api_proxy",
   "version": "1.0.0",
   "author": "jjasoncool <nameyearbirthday@gmail.com>",
   "main": "src/bin/main.js",
