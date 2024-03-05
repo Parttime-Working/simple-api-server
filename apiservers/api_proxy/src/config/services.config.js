@@ -1,7 +1,7 @@
 require('dotenv').config();
 const config = {
-  apiProxy: {
-    host: process.env.PROXY_HOST,
+  cscqs01: {
+    url: process.env.CSCQS01_URL,
   },
 };
 

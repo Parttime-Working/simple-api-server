@@ -1,8 +1,8 @@
-const port = 3001;
+require('dotenv').config();
 const express = require('express');
 const routers = require('../routers');
-require('dotenv').config();
 
+const port = process.env.SERVICE_PORT;
 const app = express();
 
 app.use(routers);

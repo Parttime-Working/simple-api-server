@@ -4,7 +4,7 @@ const apiProxyService = require('./apiProxyService.router');
 const notFoundRouter = require('./notFound.router');
 
 const apiRouters = {
-  '/api_proxy': apiProxyService,
+  '/apiservers/api_proxy': apiProxyService,
   '/*': notFoundRouter,
 };
 

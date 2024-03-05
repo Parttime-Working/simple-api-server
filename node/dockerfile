@@ -11,3 +11,5 @@ RUN pm2 set pm2-logrotate:max_size 10K
 
 # CMD [ "pm2", "start" ]
 ENTRYPOINT [ "pm2-runtime", "start", "ecosystem.config.js" ]
+# DEBUG
+# ENTRYPOINT ["tail", "-f", "/dev/null"]
